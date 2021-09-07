@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-8bm5l8dv#ok6x78i3^7luo_4*vh$)3wszp1au@b-1^5+p%73yo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['m20cs1002.herokuapp.com','127.0.01']
+ALLOWED_HOSTS = ['m20cs1002.herokuapp.com','127.0.0.1:8000','127.0.0.1']
 
 
 # Application definition
@@ -125,7 +125,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-'''
+#'''
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 # Static files (CSS, JavaScript, Images)
@@ -139,7 +139,7 @@ STATICFILES_DIRS = (
 )
 
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
-'''
+#'''
 '''
 echo "# M20CS1002" >> README.md
 git init
