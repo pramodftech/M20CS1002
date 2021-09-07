@@ -41,3 +41,8 @@ def find(request):
     else:
         return render(request,'notsafe.html')
     return HttpResponse(out)
+
+
+
+
+ 
