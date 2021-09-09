@@ -17,10 +17,14 @@ feature_names = ['Domain', 'Have_IP', 'Have_At', 'URL_Length', 'URL_Depth','Redi
 def home(request):
     return render(request,'home.html')
 
+def about(request):
+    return render(request,'about.html')
+
 def find(request):
-    url = request.GET['url']
-    print(url)
-    out = urlfeatures.featureExtraction(url,0) 
+    userurl = request.GET['url']
+    print(userurl)
+    out = urlfeatures.featureExtraction(userurl,0) 
+    print(out)
     websiteobj = website.objects.filter(url=out[0])
     print(out[0])
     print(websiteobj)
